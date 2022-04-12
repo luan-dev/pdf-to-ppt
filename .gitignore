@@ -1,0 +1,19 @@
+# Common codes listed below. Add more as needed
+
+# MacOS generated files
+.DS_Store
+
+# Windows generated files
+Thumbs.db
+
+# Log files
+*.log
+
+# Environment files
+*.env
+*.local
+*.production
+*.secrets
+
+# VSCode files
+.vscode

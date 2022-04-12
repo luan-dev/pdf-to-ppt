@@ -1,0 +1,23 @@
+name: Test Script
+
+on:
+  push:
+
+env:
+  GITHUB_SHA: ${{ github.sha }}
+  GITHUB_REF: ${{ github.ref }}
+  TEST_SECRET: ${{ secrets.TEST_SECRET }}
+
+jobs:
+  test-job:
+    name: Run Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Sanity Test
+        run: |
+          export TAG=`echo ${GITHUB_SHA} | cut -c1-7`
+          echo This is commit "$GITHUB_REF"/"$TAG"
+          echo The secret is "$TEST_SECRET"
