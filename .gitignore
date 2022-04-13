@@ -2,6 +2,7 @@
 
 # MacOS generated files
 .DS_Store
+.dccache
 
 # Windows generated files
 Thumbs.db
@@ -17,3 +18,10 @@ Thumbs.db
 
 # VSCode files
 .vscode
+
+# Virtual Environment
+.venv
+
+# Outputs
+*.pdf
+*.ppt*

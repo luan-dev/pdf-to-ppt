@@ -1,6 +1,6 @@
 # Styling
 
-> We leverage [Prettier](https://prettier.io/) to format code to our standards
+> We leverage [Black](https://pypi.org/project/black/) to format code to our standards
 
 ## QuickStart Guide
 

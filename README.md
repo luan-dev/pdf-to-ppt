@@ -1,13 +1,23 @@
-# Repo Starter
+# PDF to PPT
 
-> Template for all open-source repos regardless of language
+Converts PDF files to PowerPoint presentations with smaller file sizes
 
-## [Documentation](docs/INDEX.md)
+## Getting Started
 
-## QuickStart Guide
+Create a virtual environment:
 
-Just press "Use this template" button on the top of this page
+```
+python -m venv .venv
+activate .venv/bin/activate
+pip install -r requirements.txt
+```
 
-That's it, follow the instructions and you're done!
+Run script:
 
-Happy coding!
+```
+python convert.py {input_file}
+
+optional arguments:
+  -o, --output FILENAME  output file name (must include extension)
+  -l, --legacy           legacy resolution to support 4:3 aspect ratio
+```
